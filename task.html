@@ -1,0 +1,15 @@
+<template>
+	<label>
+		<input type="checkbox" is="data-bound"/>
+		<content></content>
+	</label>
+	<style>
+		:host {
+			display: block;
+			background-color: coral;
+		}
+		:host([data-done=true]) label {
+			text-decoration: line-through;
+		}
+	</style>
+</template>
